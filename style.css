@@ -9,3 +9,47 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+header {
+  min-height: 10vh;
+  padding: 3rem 0rem;
+}
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main {
+  min-height: 90vh;
+  overflow: hidden;
+}
+.hero-image img {
+  width: 135%;
+  position: relative;
+  right: -30px;
+}
+.hero-description {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.hero-description h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  margin: 2rem 0rem;
+}
+.hero-description p {
+  font-size: 2rem;
+  color: hsl(257, 7%, 63%);
+}
+.hero-description button {
+  border: none;
+  color: white;
+  background: hsl(180, 66%, 49%);
+  margin: 2rem 0rem;
+  padding: 1.5rem 4rem;
+  font-size: 2.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+}
