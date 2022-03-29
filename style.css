@@ -23,7 +23,7 @@ nav {
 }
 main {
   min-height: 70vh;
-  background: hsl(0, 0%, 75%);
+  background: #f0f1f6;
   margin-top: 10rem;
 }
 .hero-image img {
@@ -66,6 +66,7 @@ main {
   background-color: hsl(257, 27%, 26%);
   position: relative;
   top: -8rem;
+  border-radius: 10px;
 }
 .shorten-it input {
   border: none;
