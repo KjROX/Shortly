@@ -10,8 +10,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 header {
-  min-height: 10vh;
+  min-height: 30vh;
   padding: 3rem 0rem;
+  overflow: hidden;
 }
 nav {
   width: 90%;
@@ -21,8 +22,9 @@ nav {
   justify-content: space-between;
 }
 main {
-  min-height: 90vh;
-  overflow: hidden;
+  min-height: 70vh;
+  background: hsl(0, 0%, 75%);
+  margin-top: 10rem;
 }
 .hero-image img {
   width: 135%;
@@ -52,4 +54,91 @@ main {
   font-size: 2.5rem;
   border-radius: 30px;
   font-weight: bold;
+  cursor: pointer;
+}
+.shorten-it {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 2rem;
+  gap: 1.5rem;
+  background-color: hsl(257, 27%, 26%);
+  position: relative;
+  top: -8rem;
+}
+.shorten-it input {
+  border: none;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(257, 7%, 63%);
+}
+.shorten-it button {
+  border: none;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: hsl(180, 66%, 49%);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.advanced-statistics {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.advanced-statistics h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.advanced-statistics p {
+  font-size: 1.8rem;
+  color: hsl(257, 7%, 63%);
+}
+.brand-recognition,
+.detailed-records,
+.fully-customizable {
+  background-color: white;
+  margin: 7rem auto;
+  position: relative;
+}
+.small-image {
+  background-color: hsl(257, 27%, 26%);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -30px;
+}
+.wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.small-description h3 {
+  font-size: 2.5rem;
+}
+.small-description p {
+  padding: 0rem 2rem 2rem 2rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vl {
+  border-left: 6px solid hsl(180, 66%, 49%);
+  height: 5rem;
+  position: absolute;
+  bottom: -50px;
 }
