@@ -142,3 +142,65 @@ main {
   position: absolute;
   bottom: -50px;
 }
+.boost-your-links-today {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(257, 27%, 26%);
+  padding: 8rem 2rem;
+  gap: 1rem;
+}
+.boost-your-links-today h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.boost-your-links-today button {
+  border: none;
+  color: white;
+  background: hsl(180, 66%, 49%);
+  margin: 2rem 0rem;
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo,
+.features,
+.social-logo {
+  margin: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.features h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.features ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.features li {
+  list-style: none;
+  color: hsl(257, 7%, 63%);
+  font-size: 1.2rem;
+}
+.social-logo {
+  flex-direction: row;
+  gap: 2rem;
+}
