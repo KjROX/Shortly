@@ -21,6 +21,12 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.nav-links {
+  display: none;
+}
+.hamburger button {
+  display: none;
+}
 main {
   min-height: 70vh;
   background: #f0f1f6;
@@ -43,7 +49,7 @@ main {
 }
 .hero-description p {
   font-size: 2rem;
-  color: hsl(257, 7%, 63%);
+  color: #a9a8ad;
 }
 .hero-description button {
   border: none;
@@ -74,7 +80,7 @@ main {
   border-radius: 8px;
   font-size: 2rem;
   font-weight: 700;
-  color: hsl(257, 7%, 63%);
+  color: #a9a8ad;
 }
 .shorten-it button {
   border: none;
@@ -96,7 +102,7 @@ main {
 }
 .advanced-statistics p {
   font-size: 1.8rem;
-  color: hsl(257, 7%, 63%);
+  color: #a9a8ad;
 }
 .brand-recognition,
 .detailed-records,
@@ -198,10 +204,63 @@ footer {
 }
 .features li {
   list-style: none;
-  color: hsl(257, 7%, 63%);
+  color: #a9a8ad;
   font-size: 1.2rem;
 }
 .social-logo {
   flex-direction: row;
   gap: 2rem;
+}
+@media (min-width: 809px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+  }
+  .nav-links {
+    display: flex;
+    gap: 5rem;
+  }
+  .nav-links li {
+    list-style: none;
+    color: #a9a8ad;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .hamburger {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .hamburger img {
+    display: none;
+  }
+  .hamburger button {
+    display: block;
+    border: none;
+    color: #a9a8ad;
+    background: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .hamburger button:hover {
+    color: white;
+    background: hsl(180, 66%, 49%);
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5rem auto;
+    width: 94%;
+  }
+  .hero-description {
+    text-align: left;
+  }
+  .hero-description h1 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
 }
