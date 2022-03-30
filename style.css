@@ -131,12 +131,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 0rem 2rem 2rem 2rem;
 }
 .small-description h3 {
   font-size: 2.5rem;
-}
-.small-description p {
-  padding: 0rem 2rem 2rem 2rem;
 }
 .wrapper {
   display: flex;
@@ -177,10 +175,15 @@ main {
 footer {
   background-color: hsl(260, 8%, 14%);
   color: white;
-  padding: 3rem 3rem;
+  min-height: 20vh;
+  padding: 3rem 0rem;
+}
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90%;
+  margin: auto;
 }
 .footer-logo,
 .features,
@@ -254,13 +257,86 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     margin: 5rem auto;
-    width: 94%;
+    width: 90%;
   }
   .hero-description {
     text-align: left;
+    padding: 5rem 5rem 5rem 0rem;
+
+    /* display: flex;
+    flex-direction: column; */
   }
   .hero-description h1 {
-    font-size: 6rem;
-    line-height: 7rem;
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+  .shorten-it {
+    flex-direction: row;
+    padding: 5rem;
+  }
+  .shorten-it input {
+    width: 80%;
+  }
+  .shorten-it button {
+    width: 20%;
+  }
+  .wrapper2 {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 20rem;
+  }
+  .advanced-statistics-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .three-divs {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 5rem auto;
+    height: 55rem;
+  }
+  .brand-recognition,
+  .detailed-records,
+  .fully-customizable {
+    text-align: left;
+    padding: 2rem;
+  }
+  .brand-recognition {
+    align-self: flex-start;
+  }
+  .fully-customizable {
+    align-self: flex-end;
+  }
+  .wrapper1 {
+    width: 90%;
+    margin: auto;
+    justify-content: flex-start;
+  }
+  .small-image {
+    height: 9rem;
+    width: 9rem;
+    top: -60px;
+  }
+  .vl {
+    transform: rotateZ(90deg);
+    height: 3rem;
+    position: absolute;
+    bottom: 50%;
+    right: -17px;
+  }
+  .boost-your-links-today h1 {
+    font-size: 4rem;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
