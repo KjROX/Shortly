@@ -214,7 +214,7 @@ footer {
   flex-direction: row;
   gap: 2rem;
 }
-@media (min-width: 809px) {
+@media (min-width: 840px) {
   .logo {
     display: flex;
     align-items: center;
