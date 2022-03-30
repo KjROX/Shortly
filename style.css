@@ -262,9 +262,6 @@ footer {
   .hero-description {
     text-align: left;
     padding: 5rem 5rem 5rem 0rem;
-
-    /* display: flex;
-    flex-direction: column; */
   }
   .hero-description h1 {
     font-size: 7rem;
@@ -294,6 +291,12 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .advanced-statistics-description h1 {
+    font-size: 5rem;
+  }
+  .advanced-statistics-description p {
+    font-size: 2.5rem;
   }
   .three-divs {
     display: flex;
