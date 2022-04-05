@@ -110,7 +110,7 @@ main {
   background-color: white;
   margin: 7rem auto;
   position: relative;
-  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1), 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .small-image {
   background-color: hsl(257, 27%, 26%);
