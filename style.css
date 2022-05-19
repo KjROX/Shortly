@@ -114,6 +114,7 @@ main {
   color: white;
   font-size: 2rem;
   font-weight: 700;
+  cursor: pointer;
 }
 .links {
   width: 90%;
