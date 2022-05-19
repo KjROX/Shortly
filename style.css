@@ -115,7 +115,32 @@ main {
   font-size: 2rem;
   font-weight: 700;
 }
-
+.links {
+  width: 90%;
+  margin: 2rem auto;
+  font-size: 1.8rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+.link-results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.link-results span {
+  color: #2acfcf;
+}
+.link-results button {
+  border: none;
+  color: white;
+  background: #2acfcf;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
 .advanced-statistics {
   text-align: center;
   width: 90%;
