@@ -2,7 +2,7 @@
 const input = document.querySelector(".shorten-it input");
 const shortItButton = document.querySelector(".shorten-it button");
 const shortenItEl = document.querySelector(".shorten-it-results");
-
+const error = document.querySelector(".input span");
 //Functions
 async function fetchApi(url) {
   const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`, {
@@ -14,6 +14,7 @@ async function fetchApi(url) {
   const data = await response.json();
   return data;
 }
+
 function copyButtonFunction(div) {
   const shortLink = div.querySelector(".short-link");
   const copyButton = div.querySelector(".link-results button");
@@ -23,6 +24,7 @@ function copyButtonFunction(div) {
     navigator.clipboard.writeText(shortLink.textContent);
   });
 }
+
 function appendDiv(fullLink, shortLink) {
   const div = document.createElement("div");
   div.classList.add("links");
@@ -36,10 +38,23 @@ function appendDiv(fullLink, shortLink) {
   shortenItEl.appendChild(div);
   copyButtonFunction(div);
 }
+function showErrorMessage() {
+  error.classList.remove("not-visible");
+  input.classList.add("red-border");
+}
+function dontShowErrorMessage() {
+  error.classList.add("not-visible");
+  input.classList.remove("red-border");
+}
 async function searchLinks(url) {
   const data = await fetchApi(url);
-  const shortLink = data.result.full_short_link2;
-  appendDiv(url, shortLink);
+  if (data.ok === false) {
+    showErrorMessage();
+  } else {
+    dontShowErrorMessage();
+    const shortLink = data.result.full_short_link2;
+    appendDiv(url, shortLink);
+  }
 }
 
 //Event-Listeners
@@ -47,8 +62,8 @@ input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     const value = input.value;
     searchLinks(value);
+    input.value = "";
   }
-  input.value = "";
 });
 
 shortItButton.addEventListener("click", () => {
