@@ -54,7 +54,7 @@ main {
 .hero-description button {
   border: none;
   color: white;
-  background: hsl(180, 66%, 49%);
+  background: #2acfcf;
   margin: 2rem 0rem;
   padding: 1.5rem 4rem;
   font-size: 2.5rem;
@@ -62,11 +62,14 @@ main {
   font-weight: bold;
   cursor: pointer;
 }
+.shorten-it-results {
+  margin: 5rem auto;
+}
 .shorten-it {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 1rem auto;
+  margin: 1rem auto 0rem auto;
   padding: 2rem;
   gap: 1.5rem;
   background-color: hsl(257, 27%, 26%);
@@ -91,6 +94,7 @@ main {
   font-size: 2rem;
   font-weight: 700;
 }
+
 .advanced-statistics {
   text-align: center;
   width: 90%;
@@ -210,10 +214,20 @@ footer {
   list-style: none;
   color: #a9a8ad;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+.features li:hover {
+  color: #2acfcf;
 }
 .social-logo {
   flex-direction: row;
   gap: 2rem;
+}
+.social-logo svg {
+  cursor: pointer;
+}
+.social-logo path:hover {
+  fill: #2acfcf;
 }
 @media (min-width: 840px) {
   .logo {
@@ -230,6 +244,10 @@ footer {
     color: #a9a8ad;
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
+  }
+  .nav-links li:hover {
+    color: #2acfcf;
   }
   .hamburger {
     display: flex;
@@ -277,6 +295,32 @@ footer {
   }
   .shorten-it button {
     width: 20%;
+  }
+  .links {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+  }
+  .link-results {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  .link-results span {
+    color: #2acfcf;
+  }
+  .link-results button {
+    border: none;
+    color: white;
+    background: #2acfcf;
+    padding: 1rem 3rem;
+    border-radius: 10px;
   }
   .wrapper2 {
     width: 90%;
