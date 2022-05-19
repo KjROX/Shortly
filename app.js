@@ -46,7 +46,7 @@ function showErrorMessage() {
   error.classList.remove("not-visible");
   input.classList.add("red-border");
 }
-function dontShowErrorMessage() {
+function removeErrorMessage() {
   error.classList.add("not-visible");
   input.classList.remove("red-border");
 }
@@ -55,7 +55,7 @@ async function searchLinks(url) {
   if (data.ok === false) {
     showErrorMessage();
   } else {
-    dontShowErrorMessage();
+    removeErrorMessage();
     const shortLink = data.result.full_short_link2;
     appendDiv(url, shortLink);
   }
