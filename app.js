@@ -22,6 +22,10 @@ function copyButtonFunction(div) {
     copyButton.textContent = "Copied";
     copyButton.style.background = "hsl(257, 27%, 26%)";
     navigator.clipboard.writeText(shortLink.textContent);
+    setTimeout(() => {
+      copyButton.textContent = "Copy";
+      copyButton.style.background = "#2acfcf";
+    }, 4000);
   });
 }
 
