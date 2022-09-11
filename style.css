@@ -126,6 +126,7 @@ main {
   padding: 2rem 2rem;
   border-radius: 10px;
   gap: 1rem;
+  overflow: scroll;
 }
 .link-results {
   display: flex;
