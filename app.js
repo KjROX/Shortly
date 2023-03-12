@@ -21,7 +21,9 @@ function copyButtonFunction(div) {
   copyButton.addEventListener("click", (e) => {
     copyButton.textContent = "Copied";
     copyButton.style.background = "hsl(257, 27%, 26%)";
-    navigator.clipboard.writeText(shortLink.textContent);
+    navigator.clipboard.writeText(shortLink.textContent).then(() => {
+      alert("Link copied successfully");
+    });
     setTimeout(() => {
       copyButton.textContent = "Copy";
       copyButton.style.background = "#2acfcf";
